@@ -1,0 +1,21 @@
+<!-- config/xml/Bug.dcm.xml -->
+        <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+            <entity name="Bug" table="bugs" repository-class="BugRepository">
+                <id name="id" type="integer">
+                    <generator strategy="AUTO" />
+                </id>
+
+                <field name="description" type="text" />
+                <field name="created" type="datetime" />
+                <field name="status" type="string" />
+
+                <many-to-one target-entity="User" field="reporter" inversed-by="reportedBugs" />
+                <many-to-one target-entity="User" field="engineer" inversed-by="assignedBugs" />
+
+                <many-to-many target-entity="Product" field="products" />
+            </entity>
+        </doctrine-mapping>

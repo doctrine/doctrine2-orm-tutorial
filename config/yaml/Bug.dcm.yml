@@ -1,0 +1,26 @@
+Bug:
+  type: entity
+  table: bugs
+  repositoryClass: BugRepository
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    description:
+      type: text
+    created:
+      type: datetime
+    status:
+      type: string
+  manyToOne:
+    reporter:
+      targetEntity: User
+      inversedBy: reportedBugs
+    engineer:
+      targetEntity: User
+      inversedBy: assignedBugs
+  manyToMany:
+    products:
+      targetEntity: Product
