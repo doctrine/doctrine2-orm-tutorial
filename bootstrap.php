@@ -1,5 +1,5 @@
 <?php
-// boostrap.php
+// bootstrap.php
 
 require_once "entities/User.php";
 require_once "entities/Product.php";
