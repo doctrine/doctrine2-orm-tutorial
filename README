@@ -1,5 +1,7 @@
 This is the code for the Doctrine 2 ORM tutorial.
 
+Last Update: Tutorial is now using Composer only
+
 You can find the tutorial at:
 
-http://www.doctrine-project.org/docs/orm/2.1/en/tutorials/getting-started-xml-edition.html
+https://doctrine-orm.readthedocs.org/en/latest/tutorials/getting-started.html

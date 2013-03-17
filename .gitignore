@@ -1,1 +1,3 @@
 db.sqlite
+vendor
+composer.lock
