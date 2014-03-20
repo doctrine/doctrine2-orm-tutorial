@@ -20,6 +20,10 @@ $bug->setStatus("OPEN");
 
 foreach ($productIds AS $productId) {
     $product = $entityManager->find("Product", $productId);
+    if (!$product) {
+        echo "No product found for the input.\n";
+        exit(1);
+    }
     $bug->assignToProduct($product);
 }
 
