@@ -1,5 +1,7 @@
 {
     "require": {
+        "php": ">=5.4",
+        "ext-pdo_sqlite": "*",
         "doctrine/orm": "2.*",
         "symfony/yaml": "2.*"
     },
