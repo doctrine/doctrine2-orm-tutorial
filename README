@@ -4,4 +4,12 @@ Last Update: Tutorial is now using Composer only
 
 You can find the tutorial at:
 
-https://doctrine-orm.readthedocs.org/en/latest/tutorials/getting-started.html
+https://www.doctrine-project.org/projects/doctrine-orm/en/current/tutorials/getting-started.html
+
+## Installation:
+
+```bash
+$ git clone https://github.com/doctrine/doctrine2-orm-tutorial.git  # or: git clone git@github.com:doctrine/doctrine2-orm-tutorial.git
+$ cd doctrine2-orm-tutorial
+$ composer install
+```
